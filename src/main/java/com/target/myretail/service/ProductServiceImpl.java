@@ -27,7 +27,7 @@ public class ProductServiceImpl implements ProductService{
     @Autowired
     private ProductClient productClient;
 
-    public Product getProductById(int productId) throws Exception{
+    public Product getProductById(int productId) throws Exception {
         logger.info("Entered in getProductById - productId = {}", productId);
         long startTime = System.currentTimeMillis();
         ProductPrice productPrice = productPriceRepository.getProductPriceById(productId);
