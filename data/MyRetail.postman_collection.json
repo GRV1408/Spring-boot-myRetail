@@ -1,0 +1,78 @@
+{
+	"info": {
+		"_postman_id": "1d3e060a-a2e6-49e9-b8f0-caf8def3daeb",
+		"name": "MyRetail",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getMapping",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/products/13860428",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"products",
+						"13860428"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getMapping-54456119",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/products/54456119",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"products",
+						"54456119"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "putMapping",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 54456119,\r\n    \"name\": \"Creamy Peanut Butter 40oz - Good &#38; Gather&#8482;\",\r\n    \"current_price\": {\r\n        \"value\": 23.49,\r\n        \"currency_code\": \"USD\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/products/54456119",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"products",
+						"54456119"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
